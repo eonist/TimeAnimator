@@ -1,0 +1,2 @@
+# Chaplin
+Animation framework
