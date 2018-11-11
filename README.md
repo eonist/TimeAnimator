@@ -1,7 +1,7 @@
 # Chaplin
 Animation framework
 
-![mit](https://img.shields.io/badge/License-MIT-brightgreen.svg) ![platform](https://img.shields.io/badge/Platform-iOS-blue.svg) ![Lang](https://img.shields.io/badge/Language-Swift%204.2-orange.svg)
+![mit](https://img.shields.io/badge/License-MIT-brightgreen.svg) ![platform](https://img.shields.io/badge/Platform-iOS-blue.svg) ![Lang](https://img.shields.io/badge/Language-Swift%204.2-orange.svg) [![codebeat badge](https://codebeat.co/badges/6b9c613c-36c0-4f22-99e9-1bea15b266c1)](https://codebeat.co/projects/github-com-eonist-chaplin-master)
 
 ### What is it
 Animation framework
