@@ -1,4 +1,4 @@
-import Foundation
+import UIKit
 /**
  * let animator = TimeAnimator(duration:0.3,onChange:{/*animate stuff*/},onComplete:{/*anim completed*/})
  * animator.start()
@@ -14,17 +14,16 @@ import Foundation
  * }
  * animator.start()
  */
-class TimeAnimator:SimpleTimer{
-   
-   static let fps:TimeInterval = 1/30/*1/30 is 30FPS 1/60 IS 60FPS*/
-   var curCount:Int = 0
-   var totalCount:Int {return Int(duration / interval)}
-   var duration:TimeInterval /*in seconds*/
-   var onComplete:() -> Void
-   init(duration:TimeInterval, onChange:@escaping () -> Void = {Swift.print("TimerAnimator.onChange")}, onComplete:@escaping () -> Void = {Swift.print("TimerAnimator.onComplete")}) {
+public class TimeAnimator:SimpleTimer{
+   static let fps:TimeInterval = 1/60/*1/30 is 30FPS 1/60 IS 60FPS*/
+   private var curCount:Int = 0
+   private var totalCount:Int {return Int(ceil(duration / (interval)))}//rename to maxCount?, we needed to ceil, or else some cases would be zero
+   public var duration:TimeInterval /*in seconds*/
+   public var onComplete:() -> Void
+   public init(duration:TimeInterval, onChange:@escaping () -> Void = {/*Swift.print("TimerAnimator.onChange")*/}, onComplete:@escaping () -> Void = {/*Swift.print("TimerAnimator.onComplete")*/}) {
       self.duration = duration
       self.onComplete = onComplete
-//      self.onChange = onChange
+      //      self.onChange = onChange
       super.init(interval: TimeAnimator.fps, repeats:true, onTick: onChange)
    }
    override func update() {
@@ -38,18 +37,25 @@ class TimeAnimator:SimpleTimer{
          curCount += 1
       }
    }
+   override public func reset() {
+      stop()
+      curCount = 0
+   }
 }
+/**
+ * Utilities
+ */
 extension TimeAnimator {
    /**
     * Returns (0 to 1)
     */
-   var progress:CGFloat {
+   public var progress:CGFloat {
       return CGFloat(curCount) / CGFloat(totalCount)
    }
    /**
     * Util method for interpolating between values
     */
-   static func Interpolate(from:CGFloat, to:CGFloat, fraction:CGFloat) -> CGFloat{
+   public static func interpolate(from:CGFloat, to:CGFloat, fraction:CGFloat) -> CGFloat{
       return fraction * (to - from) + from
    }
 }
