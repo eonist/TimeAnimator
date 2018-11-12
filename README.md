@@ -18,12 +18,11 @@ Animation framework
 - CocoaPod (Coming soon)
 
 ### Example:
-
+Quick one-liner:  
 ```swift
-let animator = TimeAnimator(duration:0.3,onChange:{/*animate stuff*/},onComplete:{/*anim completed*/})
-animator.start()
+TimeAnimator(duration:0.3,onChange:{/*animate stuff*/},onComplete:{/*anim completed*/}).start()
 ```
-
+Interpolating between 0 and 1:  
 ```swift
 let to = self.curX + 1
 let animator = TimeAnimator(duration:0.3)
@@ -34,6 +33,13 @@ animator.tick = {
 	self.frame.origin.x self.curX
 }
 animator.start()
+```
+Looping:  
+```swift
+animator.onComplete = {
+   self.animator.reset()
+   self.animator.start()
+}
 ```
 
 ### Todo:
