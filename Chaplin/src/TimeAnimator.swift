@@ -37,6 +37,9 @@ public class TimeAnimator:SimpleTimer{
          curCount += 1
       }
    }
+    /**
+     * Stops timer and then sets curCount to 0
+     */
    override public func reset() {
       stop()
       curCount = 0
