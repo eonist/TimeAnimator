@@ -29,8 +29,8 @@ let animator = TimeAnimator(duration:0.3)
 animator.tick = {
 	Swift.print("animator.curCount:  \(animator.curCount)")
 	Swift.print("animator.progress:  \(animator.progress)")
-	self.curX = TimeAnimator.Interpolate(from: from, to: to, fraction: animator.progress)
-	self.frame.origin.x self.curX
+	self.curX = TimeAnimator.interpolate(from: from, to: to, fraction: animator.progress)
+	self.frame.origin.x = self.curX
 }
 animator.start()
 ```
