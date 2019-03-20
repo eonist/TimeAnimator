@@ -44,5 +44,5 @@ animator.onComplete = {
 ```
 
 ### Todo:
-- Add CAAnimation
+- Add CAAnimation https://stackoverflow.com/questions/45307902/animate-cashapelayer-with-circle-uibezierpath-and-cabasicanimation
 - Make project logo
