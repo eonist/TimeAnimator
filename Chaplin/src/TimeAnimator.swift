@@ -13,6 +13,7 @@ import UIKit
  *    self.frame.origin.x self.curX
  * }
  * animator.start()
+ * TODO: ⚠️️ Rather import simpleTimer than include the .swift file
  */
 public class TimeAnimator:SimpleTimer{
    static let fps:TimeInterval = 1/60/*1/30 is 30FPS 1/60 IS 60FPS*/
