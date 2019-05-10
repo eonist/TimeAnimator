@@ -1,4 +1,5 @@
 import UIKit
+import SimpleTimerLib
 /**
  * let animator = TimeAnimator(duration:0.3,onChange:{/*animate stuff*/},onComplete:{/*anim completed*/})
  * animator.start()
@@ -13,21 +14,20 @@ import UIKit
  *    self.frame.origin.x self.curX
  * }
  * animator.start()
- * TODO: ⚠️️ Rather import simpleTimer than include the .swift file
+ * Fixme: ⚠️️ Rather import simpleTimer than include the .swift file
  */
-public class TimeAnimator:SimpleTimer{
-   static let fps:TimeInterval = 1/60/*1/30 is 30FPS 1/60 IS 60FPS*/
-   private var curCount:Int = 0
-   private var totalCount:Int {return Int(ceil(duration / (interval)))}//rename to maxCount?, we needed to ceil, or else some cases would be zero
-   public var duration:TimeInterval /*in seconds*/
-   public var onComplete:() -> Void
-   public init(duration:TimeInterval, onChange:@escaping () -> Void = {/*Swift.print("TimerAnimator.onChange")*/}, onComplete:@escaping () -> Void = {/*Swift.print("TimerAnimator.onComplete")*/}) {
+public class TimeAnimator: SimpleTimer {
+   static let fps: TimeInterval = 1 / 60/*1/30 is 30FPS 1/60 IS 60FPS*/
+   private var curCount: Int = 0
+   private var totalCount: Int { return Int(ceil(duration / (interval))) }//rename to maxCount?, we needed to ceil, or else some cases would be zero
+   public var duration: TimeInterval /*in seconds*/
+   public var onComplete: () -> Void
+   public init(duration: TimeInterval, onChange:@escaping () -> Void = { /*Swift.print("TimerAnimator.onChange")*/ }, onComplete:@escaping () -> Void = { /*Swift.print("TimerAnimator.onComplete")*/ }) {
       self.duration = duration
       self.onComplete = onComplete
-      //      self.onChange = onChange
-      super.init(interval: TimeAnimator.fps, repeats:true, onTick: onChange)
+      super.init(interval: TimeAnimator.fps, repeats: true, onTick: onChange)
    }
-   override func update() {
+   override public func update() {
       if curCount >= totalCount {
          curCount = totalCount
          super.update()
@@ -53,13 +53,13 @@ extension TimeAnimator {
    /**
     * Returns (0 to 1)
     */
-   public var progress:CGFloat {
+   public var progress: CGFloat {
       return CGFloat(curCount) / CGFloat(totalCount)
    }
    /**
     * Util method for interpolating between values
     */
-   public static func interpolate(from:CGFloat, to:CGFloat, fraction:CGFloat) -> CGFloat{
+   public static func interpolate(from: CGFloat, to: CGFloat, fraction: CGFloat) -> CGFloat {
       return fraction * (to - from) + from
    }
 }
