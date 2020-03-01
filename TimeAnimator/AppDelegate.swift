@@ -27,6 +27,7 @@ class ViewController: UIViewController {
 class View: UIView {
    override init(frame: CGRect) {
       super.init(frame: frame)
+      TimeAnimator(duration: 0.3, onChange: { Swift.print("Animate stuff") }, onComplete: { Swift.print("Anim completed") }).start()
    }
    /**
     * Boilerplate

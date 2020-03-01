@@ -10,8 +10,12 @@
 		F1C21D67240C1A2F00E614C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C21D66240C1A2F00E614C3 /* AppDelegate.swift */; };
 		F1C21D70240C1A3800E614C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1C21D6F240C1A3800E614C3 /* Assets.xcassets */; };
 		F1C21D73240C1A3800E614C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1C21D71240C1A3800E614C3 /* LaunchScreen.storyboard */; };
-		F1C21D7C240C1AC000E614C3 /* TimeAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C21D7B240C1AC000E614C3 /* TimeAnimator.swift */; };
 		F1C21D7F240C1AEA00E614C3 /* SimpleTimer in Frameworks */ = {isa = PBXBuildFile; productRef = F1C21D7E240C1AEA00E614C3 /* SimpleTimer */; };
+		F1C21D89240C2D4400E614C3 /* TimeAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C21D86240C2D4400E614C3 /* TimeAnimator.swift */; };
+		F1C21D8A240C2D4400E614C3 /* TimeAnimator+Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C21D87240C2D4400E614C3 /* TimeAnimator+Core.swift */; };
+		F1C21D8B240C2D4400E614C3 /* TimeAnimator+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C21D88240C2D4400E614C3 /* TimeAnimator+Utils.swift */; };
+		F1C21D8D240C2E2F00E614C3 /* TimeAnimator+Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C21D8C240C2E2F00E614C3 /* TimeAnimator+Const.swift */; };
+		F1C21D8F240C308500E614C3 /* TimeAnimator+TypeAlias.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C21D8E240C308500E614C3 /* TimeAnimator+TypeAlias.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,7 +24,11 @@
 		F1C21D6F240C1A3800E614C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F1C21D72240C1A3800E614C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F1C21D74240C1A3800E614C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F1C21D7B240C1AC000E614C3 /* TimeAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeAnimator.swift; sourceTree = "<group>"; };
+		F1C21D86240C2D4400E614C3 /* TimeAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeAnimator.swift; sourceTree = "<group>"; };
+		F1C21D87240C2D4400E614C3 /* TimeAnimator+Core.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TimeAnimator+Core.swift"; sourceTree = "<group>"; };
+		F1C21D88240C2D4400E614C3 /* TimeAnimator+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TimeAnimator+Utils.swift"; sourceTree = "<group>"; };
+		F1C21D8C240C2E2F00E614C3 /* TimeAnimator+Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeAnimator+Const.swift"; sourceTree = "<group>"; };
+		F1C21D8E240C308500E614C3 /* TimeAnimator+TypeAlias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeAnimator+TypeAlias.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,7 +46,7 @@
 		F1C21D5A240C1A2E00E614C3 = {
 			isa = PBXGroup;
 			children = (
-				F1C21D7A240C1AC000E614C3 /* src */,
+				F1C21D84240C2D4400E614C3 /* Sources */,
 				F1C21D65240C1A2F00E614C3 /* TimeAnimator */,
 				F1C21D64240C1A2F00E614C3 /* Products */,
 			);
@@ -63,12 +71,24 @@
 			path = TimeAnimator;
 			sourceTree = "<group>";
 		};
-		F1C21D7A240C1AC000E614C3 /* src */ = {
+		F1C21D84240C2D4400E614C3 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				F1C21D7B240C1AC000E614C3 /* TimeAnimator.swift */,
+				F1C21D85240C2D4400E614C3 /* TimeAnimator */,
 			);
-			path = src;
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		F1C21D85240C2D4400E614C3 /* TimeAnimator */ = {
+			isa = PBXGroup;
+			children = (
+				F1C21D86240C2D4400E614C3 /* TimeAnimator.swift */,
+				F1C21D87240C2D4400E614C3 /* TimeAnimator+Core.swift */,
+				F1C21D88240C2D4400E614C3 /* TimeAnimator+Utils.swift */,
+				F1C21D8C240C2E2F00E614C3 /* TimeAnimator+Const.swift */,
+				F1C21D8E240C308500E614C3 /* TimeAnimator+TypeAlias.swift */,
+			);
+			path = TimeAnimator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,7 +168,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1C21D67240C1A2F00E614C3 /* AppDelegate.swift in Sources */,
-				F1C21D7C240C1AC000E614C3 /* TimeAnimator.swift in Sources */,
+				F1C21D8D240C2E2F00E614C3 /* TimeAnimator+Const.swift in Sources */,
+				F1C21D8B240C2D4400E614C3 /* TimeAnimator+Utils.swift in Sources */,
+				F1C21D8A240C2D4400E614C3 /* TimeAnimator+Core.swift in Sources */,
+				F1C21D8F240C308500E614C3 /* TimeAnimator+TypeAlias.swift in Sources */,
+				F1C21D89240C2D4400E614C3 /* TimeAnimator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
