@@ -2,7 +2,7 @@
 Animation framework
 
 ![mit](https://img.shields.io/badge/License-MIT-brightgreen.svg) ![platform](https://img.shields.io/badge/Platform-iOS-blue.svg) ![Lang](https://img.shields.io/badge/Language-Swift%204.2-orange.svg) [![codebeat badge](https://codebeat.co/badges/6b9c613c-36c0-4f22-99e9-1bea15b266c1)](https://codebeat.co/projects/github-com-eonist-chaplin-master)
-[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)”
+[![SMP compatible](https://img.shields.io/badge/SPM-compatible-4BC51D.svg?style=flat)](https://github.com/apple/swift)
 
 ### What is it
 A simple animation framework
