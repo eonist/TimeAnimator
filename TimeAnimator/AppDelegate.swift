@@ -20,7 +20,7 @@ class ViewController: UIViewController {
    override func viewDidLoad() {
       super.viewDidLoad()
       view = View()
-      view.backgroundColor = .orange
+      view.backgroundColor = .white
    }
    override var prefersStatusBarHidden: Bool { return false }
 }

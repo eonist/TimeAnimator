@@ -10,9 +10,9 @@ extension TimeAnimator {
       if curCount >= totalCount {
          curCount = totalCount
          super.update()
-         onComplete()
          stop()
-      }else {
+         onComplete()
+      } else {
          super.update()
          curCount += 1
       }
@@ -21,7 +21,7 @@ extension TimeAnimator {
     * Stops timer and then sets curCount to 0
     */
    override public func reset() {
-      stop()
+      if timer != nil { stop() }
       curCount = 0
    }
 }

@@ -7,6 +7,8 @@ Animation framework
 ### What is it
 A simple animation framework
 
+<img width="318" alt="img" src="https://github.com/stylekit/img/blob/master/satallite.gif?raw=true">
+
 ### How does it work
 - TimeAnimator uses the swift Timer class for animation
 - The animations wont be as smooth as using CAAnimation
