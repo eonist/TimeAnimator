@@ -16,6 +16,7 @@
 		F1C21D8B240C2D4400E614C3 /* TimeAnimator+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C21D88240C2D4400E614C3 /* TimeAnimator+Utils.swift */; };
 		F1C21D8D240C2E2F00E614C3 /* TimeAnimator+Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C21D8C240C2E2F00E614C3 /* TimeAnimator+Const.swift */; };
 		F1C21D8F240C308500E614C3 /* TimeAnimator+TypeAlias.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C21D8E240C308500E614C3 /* TimeAnimator+TypeAlias.swift */; };
+		F1C21D96240D29F700E614C3 /* TimeAnimator+Getter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C21D95240D29F700E614C3 /* TimeAnimator+Getter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		F1C21D88240C2D4400E614C3 /* TimeAnimator+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TimeAnimator+Utils.swift"; sourceTree = "<group>"; };
 		F1C21D8C240C2E2F00E614C3 /* TimeAnimator+Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeAnimator+Const.swift"; sourceTree = "<group>"; };
 		F1C21D8E240C308500E614C3 /* TimeAnimator+TypeAlias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeAnimator+TypeAlias.swift"; sourceTree = "<group>"; };
+		F1C21D95240D29F700E614C3 /* TimeAnimator+Getter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeAnimator+Getter.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				F1C21D87240C2D4400E614C3 /* TimeAnimator+Core.swift */,
 				F1C21D88240C2D4400E614C3 /* TimeAnimator+Utils.swift */,
 				F1C21D8C240C2E2F00E614C3 /* TimeAnimator+Const.swift */,
+				F1C21D95240D29F700E614C3 /* TimeAnimator+Getter.swift */,
 				F1C21D8E240C308500E614C3 /* TimeAnimator+TypeAlias.swift */,
 			);
 			path = TimeAnimator;
@@ -168,6 +171,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1C21D67240C1A2F00E614C3 /* AppDelegate.swift in Sources */,
+				F1C21D96240D29F700E614C3 /* TimeAnimator+Getter.swift in Sources */,
 				F1C21D8D240C2E2F00E614C3 /* TimeAnimator+Const.swift in Sources */,
 				F1C21D8B240C2D4400E614C3 /* TimeAnimator+Utils.swift in Sources */,
 				F1C21D8A240C2D4400E614C3 /* TimeAnimator+Core.swift in Sources */,
