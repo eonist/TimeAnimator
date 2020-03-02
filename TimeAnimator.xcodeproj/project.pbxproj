@@ -17,6 +17,8 @@
 		F1C21D8D240C2E2F00E614C3 /* TimeAnimator+Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C21D8C240C2E2F00E614C3 /* TimeAnimator+Const.swift */; };
 		F1C21D8F240C308500E614C3 /* TimeAnimator+TypeAlias.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C21D8E240C308500E614C3 /* TimeAnimator+TypeAlias.swift */; };
 		F1C21D96240D29F700E614C3 /* TimeAnimator+Getter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C21D95240D29F700E614C3 /* TimeAnimator+Getter.swift */; };
+		F1C21D98240D3B5B00E614C3 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C21D97240D3B5B00E614C3 /* View.swift */; };
+		F1C21D9E240D3C4B00E614C3 /* GeomKit in Frameworks */ = {isa = PBXBuildFile; productRef = F1C21D9D240D3C4B00E614C3 /* GeomKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,7 @@
 		F1C21D8C240C2E2F00E614C3 /* TimeAnimator+Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeAnimator+Const.swift"; sourceTree = "<group>"; };
 		F1C21D8E240C308500E614C3 /* TimeAnimator+TypeAlias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeAnimator+TypeAlias.swift"; sourceTree = "<group>"; };
 		F1C21D95240D29F700E614C3 /* TimeAnimator+Getter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeAnimator+Getter.swift"; sourceTree = "<group>"; };
+		F1C21D97240D3B5B00E614C3 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +42,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1C21D7F240C1AEA00E614C3 /* SimpleTimer in Frameworks */,
+				F1C21D9E240D3C4B00E614C3 /* GeomKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				F1C21D66240C1A2F00E614C3 /* AppDelegate.swift */,
+				F1C21D99240D3B6E00E614C3 /* View */,
 				F1C21D6F240C1A3800E614C3 /* Assets.xcassets */,
 				F1C21D71240C1A3800E614C3 /* LaunchScreen.storyboard */,
 				F1C21D74240C1A3800E614C3 /* Info.plist */,
@@ -94,6 +99,14 @@
 			path = TimeAnimator;
 			sourceTree = "<group>";
 		};
+		F1C21D99240D3B6E00E614C3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F1C21D97240D3B5B00E614C3 /* View.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -112,6 +125,7 @@
 			name = TimeAnimator;
 			packageProductDependencies = (
 				F1C21D7E240C1AEA00E614C3 /* SimpleTimer */,
+				F1C21D9D240D3C4B00E614C3 /* GeomKit */,
 			);
 			productName = TimeAnimator;
 			productReference = F1C21D63240C1A2F00E614C3 /* TimeAnimator.app */;
@@ -143,6 +157,7 @@
 			mainGroup = F1C21D5A240C1A2E00E614C3;
 			packageReferences = (
 				F1C21D7D240C1AEA00E614C3 /* XCRemoteSwiftPackageReference "SimpleTimer" */,
+				F1C21D9C240D3C4B00E614C3 /* XCRemoteSwiftPackageReference "GeomKit" */,
 			);
 			productRefGroup = F1C21D64240C1A2F00E614C3 /* Products */;
 			projectDirPath = "";
@@ -170,6 +185,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1C21D98240D3B5B00E614C3 /* View.swift in Sources */,
 				F1C21D67240C1A2F00E614C3 /* AppDelegate.swift in Sources */,
 				F1C21D96240D29F700E614C3 /* TimeAnimator+Getter.swift in Sources */,
 				F1C21D8D240C2E2F00E614C3 /* TimeAnimator+Const.swift in Sources */,
@@ -374,6 +390,14 @@
 				kind = branch;
 			};
 		};
+		F1C21D9C240D3C4B00E614C3 /* XCRemoteSwiftPackageReference "GeomKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/eonist/GeomKit.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -381,6 +405,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F1C21D7D240C1AEA00E614C3 /* XCRemoteSwiftPackageReference "SimpleTimer" */;
 			productName = SimpleTimer;
+		};
+		F1C21D9D240D3C4B00E614C3 /* GeomKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F1C21D9C240D3C4B00E614C3 /* XCRemoteSwiftPackageReference "GeomKit" */;
+			productName = GeomKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

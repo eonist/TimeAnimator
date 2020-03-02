@@ -2,6 +2,24 @@
   "object": {
     "pins": [
       {
+        "package": "GeomKit",
+        "repositoryURL": "https://github.com/eonist/GeomKit.git",
+        "state": {
+          "branch": "master",
+          "revision": "7fa20e58d5f547f2e9380386de297868fb0d0a40",
+          "version": null
+        }
+      },
+      {
+        "package": "NumberSugar",
+        "repositoryURL": "https://github.com/eonist/NumberSugar.git",
+        "state": {
+          "branch": "master",
+          "revision": "9022682a2b27a04540059c1632925a9b80a406e8",
+          "version": null
+        }
+      },
+      {
         "package": "SimpleTimer",
         "repositoryURL": "https://github.com/eonist/SimpleTimer.git",
         "state": {

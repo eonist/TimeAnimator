@@ -24,15 +24,3 @@ class ViewController: UIViewController {
    }
    override var prefersStatusBarHidden: Bool { return false }
 }
-class View: UIView {
-   override init(frame: CGRect) {
-      super.init(frame: frame)
-      TimeAnimator(duration: 0.3, onChange: { Swift.print("Animate stuff") }, onComplete: { Swift.print("Anim completed") }).start()
-   }
-   /**
-    * Boilerplate
-    */
-   required init?(coder aDecoder: NSCoder) {
-      fatalError("init(coder:) has not been implemented")
-   }
-}

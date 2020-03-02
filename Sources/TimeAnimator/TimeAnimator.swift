@@ -1,6 +1,8 @@
 import Foundation
 import SimpleTimer
 /**
+ * TimeAnimator is a simple animation framework that uses a timer to animate
+ * - Note: If you want to use TimeAnimator in a locally scoped variable, you should use lazy var if you want to hock up onChange and onComplete inline
  * ## Examples:
  * let to = self.curX + 1
  * let animator = TimeAnimator(duration: 0.3)
