@@ -15,7 +15,7 @@
 		F1C21D8A240C2D4400E614C3 /* TimeAnimator+Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C21D87240C2D4400E614C3 /* TimeAnimator+Core.swift */; };
 		F1C21D8B240C2D4400E614C3 /* TimeAnimator+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C21D88240C2D4400E614C3 /* TimeAnimator+Utils.swift */; };
 		F1C21D8D240C2E2F00E614C3 /* TimeAnimator+Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C21D8C240C2E2F00E614C3 /* TimeAnimator+Const.swift */; };
-		F1C21D8F240C308500E614C3 /* TimeAnimator+TypeAlias.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C21D8E240C308500E614C3 /* TimeAnimator+TypeAlias.swift */; };
+		F1C21D8F240C308500E614C3 /* TimeAnimator+Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C21D8E240C308500E614C3 /* TimeAnimator+Type.swift */; };
 		F1C21D96240D29F700E614C3 /* TimeAnimator+Getter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C21D95240D29F700E614C3 /* TimeAnimator+Getter.swift */; };
 		F1C21D98240D3B5B00E614C3 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C21D97240D3B5B00E614C3 /* View.swift */; };
 		F1C21D9E240D3C4B00E614C3 /* GeomKit in Frameworks */ = {isa = PBXBuildFile; productRef = F1C21D9D240D3C4B00E614C3 /* GeomKit */; };
@@ -31,7 +31,7 @@
 		F1C21D87240C2D4400E614C3 /* TimeAnimator+Core.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TimeAnimator+Core.swift"; sourceTree = "<group>"; };
 		F1C21D88240C2D4400E614C3 /* TimeAnimator+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TimeAnimator+Utils.swift"; sourceTree = "<group>"; };
 		F1C21D8C240C2E2F00E614C3 /* TimeAnimator+Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeAnimator+Const.swift"; sourceTree = "<group>"; };
-		F1C21D8E240C308500E614C3 /* TimeAnimator+TypeAlias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeAnimator+TypeAlias.swift"; sourceTree = "<group>"; };
+		F1C21D8E240C308500E614C3 /* TimeAnimator+Type.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeAnimator+Type.swift"; sourceTree = "<group>"; };
 		F1C21D95240D29F700E614C3 /* TimeAnimator+Getter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeAnimator+Getter.swift"; sourceTree = "<group>"; };
 		F1C21D97240D3B5B00E614C3 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -94,7 +94,7 @@
 				F1C21D88240C2D4400E614C3 /* TimeAnimator+Utils.swift */,
 				F1C21D8C240C2E2F00E614C3 /* TimeAnimator+Const.swift */,
 				F1C21D95240D29F700E614C3 /* TimeAnimator+Getter.swift */,
-				F1C21D8E240C308500E614C3 /* TimeAnimator+TypeAlias.swift */,
+				F1C21D8E240C308500E614C3 /* TimeAnimator+Type.swift */,
 			);
 			path = TimeAnimator;
 			sourceTree = "<group>";
@@ -138,7 +138,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
-				LastUpgradeCheck = 1130;
+				LastUpgradeCheck = 1240;
 				ORGANIZATIONNAME = FutureLab;
 				TargetAttributes = {
 					F1C21D62240C1A2F00E614C3 = {
@@ -191,7 +191,7 @@
 				F1C21D8D240C2E2F00E614C3 /* TimeAnimator+Const.swift in Sources */,
 				F1C21D8B240C2D4400E614C3 /* TimeAnimator+Utils.swift in Sources */,
 				F1C21D8A240C2D4400E614C3 /* TimeAnimator+Core.swift in Sources */,
-				F1C21D8F240C308500E614C3 /* TimeAnimator+TypeAlias.swift in Sources */,
+				F1C21D8F240C308500E614C3 /* TimeAnimator+Type.swift in Sources */,
 				F1C21D89240C2D4400E614C3 /* TimeAnimator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -236,6 +236,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -296,6 +297,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;

@@ -33,7 +33,7 @@ extension View {
     * onChange
     */
    func onAnimChange() {
-      Swift.print("Animate stuff")
+      Swift.print("onAnimChange")
       let angle: CGFloat = CGFloat.pi * 2 * animator.progress
       let satellitePT: CGPoint = centerPT.polarPoint(radius: 100, angle: angle)
       CGShapeUtil.drawCircle(with: satelliteCircle, circle: (satellitePT, 20), style: (.gray, nil, nil))
@@ -42,7 +42,7 @@ extension View {
     * onComplete
     */
    func onAnimComplete() {
-      Swift.print("Anim completed")
+      Swift.print("onAnimComplete")
 //      if i < max { animator.completed = onComplete }
       if i < max {
          i += 1 // increment the count

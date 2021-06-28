@@ -21,6 +21,9 @@ public class TimeAnimator: SimpleTimer {
    internal var curCount: Int = 0
    public var duration: TimeInterval // In seconds
    public var onComplete: OnComplete
+   /**
+    * - Fixme: ⚠️️ Add doc
+    */
    public init(duration: TimeInterval, onChange:@escaping OnChange = defaultOnComplete, onComplete:@escaping OnComplete = defaultOnComplete) {
       self.duration = duration
       self.onComplete = onComplete
